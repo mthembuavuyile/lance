@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lance Clothing - Empower Your Style</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            background-color: #2e7d32;
+            color: #fff;
+            padding: 0.75rem;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        main {
+            padding: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .cta {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+            border-radius: 8px;
+        }
+        .cta a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        footer {
+            background-color: #2e7d32;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .social-media {
+            margin-top: 1rem;
+        }
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 0.75rem;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.75rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lance Clothing</h1>
+        <p>Empower Your Style</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#new-arrivals">New Arrivals</a></li>
+            <li><a href="#best-sellers">Best Sellers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="new-arrivals" class="product-grid">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=Cozy+Comfort+Hoodie" alt="Cozy Comfort Hoodie">
+                <h3>Cozy Comfort Hoodie</h3>
+                <p>R380,00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=Unisex+Tee" alt="Unisex Tee">
+                <h3>Unisex Tee</h3>
+                <p>R200,00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=NSGQuotee" alt="NSGQuotee">
+                <h3>NSGQuotee</h3>
+                <p>Regular Price: R210,00 | Sale Price: R200,00</p>
+            </div>
+        </section>
+        <section id="best-sellers" class="product-grid">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=White+Hoodie" alt="White Hoodie">
+                <h3>White Hoodie</h3>
+                <p>R380,00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=Hoodie" alt="Hoodie">
+                <h3>Hoodie</h3>
+                <p>R410,00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=Lance+Hoodie" alt="Lance Hoodie">
+                <h3>Lance Hoodie</h3>
+                <p>R300,00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=Tee" alt="Tee">
+                <h3>Tee</h3>
+                <p>R200,00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=Quoted+Tee" alt="Quoted Tee">
+                <h3>Quoted Tee</h3>
+                <p>R210,00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=White+Graphic+Tee" alt="White Graphic Tee">
+                <h3>White Graphic Tee</h3>
+                <p>R190,00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=Logo+Sweatpants" alt="Logo Sweatpants">
+                <h3>Logo Sweatpants</h3>
+                <p>R300,00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300.png?text=Essential+Hoodie" alt="Essential Hoodie">
+                <h3>Essential Hoodie</h3>
+                <p>Regular Price: R380,00 | Sale Price: R310,00</p>
+            </div>
+        </section>
+        <div class="cta">
+            <p>Limited Stock Available! Order now to secure your purchase.</p>
+            <a href="https://wa.me/0684923600">Chat with us on WhatsApp</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lance Clothing. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com/lanceclothingza">Facebook</a>
+            <a href="https://instagram.com/lanceclothingza">Instagram</a>
+            <a href="https://tiktok.com/@lanceclothingza">TikTok</a>
+        </div>
+        <p>Email: <a href="mailto:lanceclothingza@gmail.com">lanceclothingza@gmail.com</a> | Tel: <a href="tel:+27684923600">068 492 3600</a></p>
+    </footer>
+</body>
+</html>
