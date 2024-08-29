@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lance Clothing - Empower Your Style</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👕</text></svg>" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqk1w27TLihaJzEqP3KP81jZ9Hyyv5F6vU0z6K/lZGoQtrT7L3S3yzLEU3VYcZq2OkE+eG+s==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
@@ -30,6 +31,7 @@
             background-image: linear-gradient(135deg, #3498db, #2980b9);
             background-attachment: fixed;
             min-height: 100vh;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
         }
 
         .container {
@@ -321,6 +323,11 @@
 
         .social-media a {
             margin: 0 0.5rem;
+            color: var(--light-text-color);
+        }
+
+        .social-media a:hover {
+            color: var(--accent-color);
         }
 
         /* Media Queries */
@@ -406,6 +413,7 @@
                     <div class="product-info">
                         <h3>Cozy Comfort Hoodie</h3>
                         <p>R400,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -415,6 +423,7 @@
                     <div class="product-info">
                         <h3>Unisex Tee</h3>
                         <p>R250,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -424,9 +433,10 @@
                     <div class="product-info">
                         <h3>Golf Tee</h3>
                         <p>Regular Price: R350,00 | Sale Price: R200,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
-            </div>
+                </div>
         </section>
 
         <section id="best-sellers" class="container">
@@ -434,20 +444,22 @@
             <div class="product-grid">
                 <div class="product-item">
                     <div class="product-image">
-                        <img src="https://via.placeholder.com/300x300.png?text=White+Hoodie" alt="White Hoodie">
+                        <img src="https://static.wixstatic.com/media/18f5ba_487f0dc6b9b1459ca61cc47a033eb585~mv2.png/v1/fill/w_237,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/18f5ba_487f0dc6b9b1459ca61cc47a033eb585~mv2.png" alt="Hoodie">
                     </div>
                     <div class="product-info">
-                        <h3>White Hoodie</h3>
+                        <h3>Hoodie</h3>
                         <p>R380,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product-item">
                     <div class="product-image">
-                        <img src="https://via.placeholder.com/300x300.png?text=Hoodie" alt="Hoodie">
+                        <img src="https://static.wixstatic.com/media/18f5ba_2c9d39809574481fac699ff01deff9ef~mv2.png/v1/fill/w_237,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/18f5ba_2c9d39809574481fac699ff01deff9ef~mv2.png" alt="Hoodie">
                     </div>
                     <div class="product-info">
                         <h3>Hoodie</h3>
                         <p>R410,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -457,15 +469,27 @@
                     <div class="product-info">
                         <h3>Lance Hoodie</h3>
                         <p>R300,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product-item">
                     <div class="product-image">
-                        <img src="https://via.placeholder.com/300x300.png?text=Tee" alt="Tee">
+                        <img src="https://static.wixstatic.com/media/18f5ba_8585b8bfb00c43919b59e1e19db36c49~mv2.png/v1/fill/w_237,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/18f5ba_8585b8bfb00c43919b59e1e19db36c49~mv2.png" alt="White Graphic Tee">
+                    </div>
+                    <div class="product-info">
+                        <h3>White Graphic Tee</h3>
+                        <p>R190,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://static.wixstatic.com/media/18f5ba_6098029c7e8145248d770c91d9762734~mv2.png/v1/fill/w_237,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/18f5ba_6098029c7e8145248d770c91d9762734~mv2.png" alt="Tee">
                     </div>
                     <div class="product-info">
                         <h3>Tee</h3>
                         <p>R200,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -475,15 +499,7 @@
                     <div class="product-info">
                         <h3>Pants</h3>
                         <p>R250,00</p>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="https://via.placeholder.com/300x300.png?text=White+Graphic+Tee" alt="White Graphic Tee">
-                    </div>
-                    <div class="product-info">
-                        <h3>White Graphic Tee</h3>
-                        <p>R190,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -493,6 +509,7 @@
                     <div class="product-info">
                         <h3>Logo Sweatpants</h3>
                         <p>R300,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -502,6 +519,7 @@
                     <div class="product-info">
                         <h3>Logo Sweatpants</h3>
                         <p>R300,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -511,6 +529,7 @@
                     <div class="product-info">
                         <h3>Essential Hoodie</h3>
                         <p>Regular Price: R380,00 | Sale Price: R310,00</p>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -519,20 +538,21 @@
         <section class="cta">
             <div class="cta-content container">
                 <p>Limited Stock Available! Order now to secure your purchase.</p>
-                <a href="https://wa.me/0684923600">Chat with us on WhatsApp</a>
+                <a href="https://wa.me/+27640590149"><i class="fab fa-whatsapp"></i> Chat with us on WhatsApp</a>
             </div>
         </section>
     </main>
 
     <footer id="contact">
         <div class="container">
-            <p>&copy; 2024 Lance Clothing. All rights reserved.</p>
+            <p>© 2024 Lance Clothing. All rights reserved.</p>
             <div class="social-media">
-                <a href="https://facebook.com/lanceclothingza">Facebook</a>
-                <a href="https://instagram.com/lanceclothingza">Instagram</a>
-                <a href="https://tiktok.com/@lanceclothingza">TikTok</a>
+                <a href="https://facebook.com/lanceclothingza"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/lanceclothingza"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/@lanceclothingza"><i class="fab fa-tiktok"></i></a>
             </div>
-            <p>Email: <a href="mailto:lanceclothingza@gmail.com">lanceclothingza@gmail.com</a> | Tel: <a href="tel:+27684923600">068 492 3600</a></p>
+            <p>Email: <a href="mailto:lanceclothingza@gmail.com">lanceclothingza@gmail.com</a></p>
+            <p><a href="tel:+27640590149">064-059-0149</a></p>
         </div>
     </footer>
 
