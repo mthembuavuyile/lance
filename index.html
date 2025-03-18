@@ -1,67 +1,991 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <title>Lance Clothing - Premium Fashion</title>
-    
-        <!-- Meta Description -->
-        <meta name="description" content="Shop premium fashion at Lance Clothing. Explore our latest trends and enjoy free shipping on orders over R500.">
-    
-        <!-- Keywords -->
-        <meta name="keywords" content="Lance Clothing, premium fashion, online clothing store, new arrivals, best sellers, men's fashion, women's fashion, South Africa, stylish clothing, fashion trends, quality apparel">
-    
-        <!-- Author -->
-        <meta name="author" content="Lance Clothing">
-    
-        <!-- Open Graph Meta Tags for Social Sharing -->
-        <meta property="og:title" content="Lance Clothing - Premium Fashion">
-        <meta property="og:description" content="Discover the latest trends in fashion. Free shipping on orders over R500.">
-        <meta property="og:image" content="https://yourwebsite.com/image.jpg"> <!-- Replace with your actual image URL -->
-        <meta property="og:url" content="https://yourwebsite.com"> <!-- Replace with your actual URL -->
-        <meta property="og:type" content="website">
-    
-        <!-- Twitter Card Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Lance Clothing - Premium Fashion">
-        <meta name="twitter:description" content="Explore the latest in premium fashion with free shipping on orders over R500.">
-        <meta name="twitter:image" content="https://yourwebsite.com/image.jpg"> <!-- Replace with your actual image URL -->
-    
-        <!-- Canonical URL -->
-        <link rel="canonical" href="https://yourwebsite.com"> <!-- Replace with your actual URL -->
-    
-        <!-- Additional Meta Tags for Mobile Optimization -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
-        <meta name="theme-color" content="#ffffff">
-    
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👕</text></svg>">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="styles.css"> <!-- Ensure this path is correct -->
-    </head>    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Lance Clothing - Premium Fashion</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Shop premium fashion at Lance Clothing. Explore our latest trends and enjoy free shipping on orders over R1000.">
+    <meta name="keywords"
+        content="Lance Clothing, premium fashion, online clothing store, new arrivals, best sellers, men's fashion, women's fashion, South Africa, stylish clothing, fashion trends, quality apparel">
+    <meta name="author" content="Lance Clothing">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Lance Clothing - Premium Fashion">
+    <meta property="og:description" content="Discover the latest trends in fashion. Free shipping on orders over R100.">
+    <meta property="og:image" content="https://yourwebsite.com/image.jpg"> <!-- Replace with your actual image URL -->
+    <meta property="og:url" content="https://yourwebsite.com"> <!-- Replace with your actual URL -->
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lance Clothing - Premium Fashion">
+    <meta name="twitter:description"
+        content="Explore the latest in premium fashion with free shipping on orders over R1o00.">
+    <meta name="twitter:image" content="https://yourwebsite.com/image.jpg"> <!-- Replace with your actual image URL -->
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com"> <!-- Replace with your actual URL -->
+
+    <!-- Mobile Optimization Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👕</text></svg>">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <style>
+        /* CSS remains the same as provided in the original script */
+        /* ... (Your CSS Styles) ... */
+
+        /* --- CSS from original script --- */
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-top {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+            font-size: 0.9rem;
+        }
+
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .nav-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            position: relative;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .main-nav a:hover {
+            color: #666;
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #1a1a1a;
+            transition: width 0.3s;
+        }
+
+        .main-nav a:hover::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header-actions button {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: #1a1a1a;
+            color: #fff;
+            font-size: 0.7rem;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/lance-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #8d8b8b;
+            color: #1a1a1a;
+            padding: 12px 30px;
+            margin: 20px 0;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background-color: #1a1a1a;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Product Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #1a1a1a;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative; /* Add position relative for badge positioning */
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .product-item:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .price {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .regular-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 8px;
+        }
+
+        .sale-price {
+            color: #e94444;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 10px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #333;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: #fff;
+        }
+
+        .footer-section p {
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+        .footer-section p a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .copyright a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .main-header {
+                flex-wrap: wrap;
+            }
+
+            .nav-toggle {
+                display: block;
+                order: 3;
+                border: none;
+                background: none;
+            }
+
+            .main-nav {
+                flex-basis: 100%;
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 15px;
+            }
+
+            .main-nav.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                height: 60vh;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Cart Styles */
+        #cart-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+        }
+
+        #cart-modal .cart-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close-cart {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .cart-items {
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-item-image {
+            width: 80px;
+            margin-right: 15px;
+        }
+
+        .cart-item-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .cart-item-details {
+            flex-grow: 1;
+        }
+
+        .cart-item-details h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .cart-item-details p {
+            font-size: 0.9rem;
+        }
+
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-item-actions button {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #666;
+            margin: 0 5px;
+        }
+
+        .cart-item-actions button:hover {
+            color: #333;
+        }
+
+        .cart-total {
+            text-align: right;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .empty-cart {
+            text-align: center;
+            color: #777;
+        }
+
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .checkout-btn:hover {
+            background-color: #333;
+        }
+
+        /* Wishlist Styles */
+        #wishlist-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1002;
+        }
+
+        #wishlist-modal .wishlist-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close-wishlist {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .wishlist-items {
+            margin-bottom: 20px;
+        }
+
+        .wishlist-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .wishlist-item-image {
+            width: 80px;
+            margin-right: 15px;
+        }
+
+        .wishlist-item-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .wishlist-item-details {
+            flex-grow: 1;
+        }
+
+        .wishlist-item-details h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .wishlist-item-details p {
+            font-size: 0.9rem;
+        }
+
+        .wishlist-item-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .wishlist-item-actions button {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #666;
+            margin: 0 5px;
+        }
+
+        .wishlist-item-actions button:hover {
+            color: #333;
+        }
+
+        .empty-wishlist {
+            text-align: center;
+            color: #777;
+        }
+
+        /* Featured Badge */
+        .featured-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #e94444;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            z-index: 1;
+        }
+
+        /* Sale Badge */
+        .sale-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            z-index: 1;
+        }
+
+        /* Wishlist icon */
+        .add-to-wishlist {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .add-to-wishlist:hover {
+            color: #e94444;
+        }
+
+        /* Color Options */
+        .color-options {
+            margin-bottom: 10px;
+        }
+
+        .color-options label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .color-selector {
+            display: flex;
+            gap: 8px;
+        }
+
+        .color-option {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .color-option:hover,
+        .color-option.active {
+            border-color: #333;
+        }
+
+        /* Size Options */
+        .size-options {
+            margin-bottom: 10px;
+        }
+
+        .size-options label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .size-selector {
+            display: flex;
+            gap: 8px;
+        }
+
+        .size-option {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .size-option:hover,
+        .size-option.active {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        /* Rating Stars */
+        .product-rating {
+            margin-bottom: 10px;
+            color: #f39c12;
+            /* Gold color */
+        }
+
+        .product-rating i {
+            margin: 0 2px;
+        }
+
+        .product-rating .review-count {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Product actions (Quick View, Add to Wishlist) */
+        .product-actions {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            z-index: 2;
+        }
+
+        .product-actions button {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #fff;
+            /* Make icons visible on dark images */
+            transition: color 0.3s;
+        }
+
+        .product-actions button:hover {
+            color: #e94444;
+            /* Change color on hover */
+        }
+
+        /* Modal Styles */
+        .product-modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            /* Ensure modal is on top */
+        }
+
+        .product-modal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 800px;
+            /* Responsive width */
+        }
+
+        .product-modal .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .product-modal-content {
+            display: flex;
+            gap: 20px;
+            /* Space between image and details */
+        }
+
+        .product-modal-image {
+            width: 40%;
+            /* Adjust as needed */
+        }
+
+        .product-modal-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .product-modal-details {
+            width: 60%;
+            /* Adjust as needed */
+        }
+
+        .product-modal-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .product-modal-details .product-description {
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .product-modal-details .product-meta {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .product-modal-details .product-meta p {
+            margin-bottom: 5px;
+        }
+
+        .in-stock {
+            color: #2ecc71;
+            /* Green */
+        }
+
+        .out-of-stock {
+            color: #e74c3c;
+            /* Red */
+        }
+
+        /* Quantity Selector */
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            overflow: hidden;
+            /* Hide overflow content */
+        }
+
+        .quantity-selector button {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #666;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .quantity-selector button:hover {
+            background-color: #f0f0f0;
+            /* Light gray */
+        }
+
+        .quantity-selector input[type="number"] {
+            width: 40px;
+            text-align: center;
+            border: none;
+            padding: 5px;
+            font-size: 1rem;
+            appearance: none;
+            -webkit-appearance: none;
+            /* Remove arrows on Chrome, Safari */
+            margin: 0;
+            /* Reset margin */
+        }
+
+        /* Hide arrows on Firefox */
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Notification */
+        #notification {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 10000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        #notification.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+
 <body>
     <header>
         <div class="header-top">
-            Free shipping on orders over R500 | Express Nationwide Delivery
+            Free shipping on orders over R1000 | Express Nationwide Delivery
         </div>
         <div class="main-header">
             <a href="#" class="logo">Lance Clothing</a>
-            <div class="nav-toggle">
+            <button class="nav-toggle" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
             <nav class="main-nav">
                 <a href="#">Home</a>
                 <a href="#new-arrivals">New Arrivals</a>
                 <a href="#best-sellers">Best Sellers</a>
                 <a href="#contact">Contact</a>
-                <a href="products.html">All products</a>
             </nav>
             <div class="header-actions">
-                <button><i class="fas fa-search"></i></button>
-                <button><i class="fas fa-user"></i></button>
-                <button>
+                <button id="search-button" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button id="user-button" aria-label="User Account"><i class="fas fa-user"></i></button>
+                <button id="cart-button" aria-label="Shopping Cart">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
+                </button>
+                <button id="wishlist-button" aria-label="Wishlist">
+                    <i class="fas fa-heart"></i>
                 </button>
             </div>
         </div>
@@ -76,99 +1000,21 @@
                 <a href="#new-arrivals" class="cta-button">Shop Now</a>
             </div>
         </section>
-        
-    
+
         <section id="new-arrivals" class="container">
             <h2 class="section-title">New Arrivals</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="https://static.wixstatic.com/media/18f5ba_487f0dc6b9b1459ca61cc47a033eb585~mv2.png" alt="Cozy Comfort Hoodie">
-                    </div>
-                    <div class="product-info">
-                        <h3>Cozy Comfort Hoodie</h3>
-                        <p class="price">R400.00</p>
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="https://static.wixstatic.com/media/18f5ba_8585b8bfb00c43919b59e1e19db36c49~mv2.png" alt="Cozy Comfort Hoodie">
-                    </div>
-                    <div class="product-info">
-                        <h3>White Tee</h3>
-                        <p class="price">R290.00</p>
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="https://static.wixstatic.com/media/18f5ba_2c9d39809574481fac699ff01deff9ef~mv2.png" alt="Unisex Tee">
-                    </div>
-                    <div class="product-info">
-                        <h3>White Hoodie</h3>
-                        <p class="price">R385.00</p>
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="https://static.wixstatic.com/media/18f5ba_9f1b9e6ed4ca4dbe82e781eff276ffa0~mv2.png" alt="Golf Tee">
-                    </div>
-                    <div class="product-info">
-                        <h3>Casual Pants</h3>
-                        <p class="price">R300.00</p>
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
+            <div class="product-grid" id="new-arrivals-grid">
+                <!-- Products will be added by JavaScript -->
             </div>
         </section>
-    
+
         <section id="best-sellers" class="container">
             <h2 class="section-title">Best Sellers</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="images/lance (5).jpg" alt="Essential Hoodie">
-                    </div>
-                    <div class="product-info">
-                        <h3>Sports Jacket</h3>
-                        <p class="price">R380.00</p>
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="product-image">
-                        <img src="images/lance (4).jpg" alt="Essential Hoodie">
-                    </div>
-                    <div class="product-info">
-                        <h3>Essential Hoodie</h3>
-                        <p class="price">
-                            <span class="regular-price">R380.00</span>
-                            <span class="sale-price">R310.00</span>
-                        </p>
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
+            <div class="product-grid" id="best-sellers-grid">
+                <!-- Products will be added by JavaScript -->
             </div>
         </section>
-
-        <center><a href="products.html" class="cta-button">Explore Our Full Collection</a></center>
-
-    </main>    
+    </main>
 
     <footer id="contact">
         <div class="footer-content">
@@ -200,12 +1046,726 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2024 Lance Clothing. All rights reserved.</p>
+            <p>© 2024 Lance Clothing. All rights reserved.</p>
             <p>Designed and Developed by <a href="https://avuyilemthembu.co.za" target="_blank">Avuyile Mthembu</a></p>
         </div>
     </footer>
 
-    <script src="common-script.js"></script>
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="product-modal-overlay">
+        <div class="cart-content product-modal">
+            <button class="close-cart close-modal">×</button>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be rendered here by JavaScript -->
+            </div>
+            <div class="cart-total-section">
+                <p class="cart-total">Total: <span id="cart-total">R0.00</span></p>
+                <button id="checkout-btn" class="checkout-btn" disabled>Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
 
+    <!-- Wishlist Modal -->
+    <div id="wishlist-modal" class="product-modal-overlay">
+        <div class="wishlist-content product-modal">
+            <button class="close-wishlist close-modal">×</button>
+            <h2>Wishlist</h2>
+            <div id="wishlist-items" class="wishlist-items">
+                <!-- Wishlist items will be rendered here by JavaScript -->
+            </div>
+            <div class="wishlist-actions">
+                <p class="empty-wishlist" style="display: none;">Your wishlist is empty</p>
+                <!-- You can add actions here if needed, e.g., "Move all to cart" -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div id="product-quick-view-modal">
+        <!-- Product modal content will be dynamically loaded here by JavaScript -->
+    </div>
+
+    <!-- Notification -->
+    <div id="notification"></div>
+
+    <script>
+        // --- JavaScript from original script with improvements and modularization ---
+
+        // --- Utility Functions ---
+        const showNotification = (message, type = 'success') => {
+            const notificationArea = document.getElementById('notification');
+            notificationArea.textContent = message;
+            notificationArea.className = `show ${type}`; // Consider adding specific classes for types
+
+            setTimeout(() => {
+                notificationArea.classList.remove('show');
+            }, 3000); // Duration for notification display
+        };
+
+        const getProductById = (productId, category) => {
+            const productList = category === 'newArrivals' ? products.newArrivals : products.bestSellers;
+            return productList.find(p => p.id === productId);
+        };
+
+        // --- Data ---
+        // Product data (same as original script)
+        const products = {
+    newArrivals: [
+        {
+            id: 'hoodie-1',
+            name: 'Cozy Comfort Hoodie',
+            price: 400.00,
+            image: 'https://static.wixstatic.com/media/18f5ba_487f0dc6b9b1459ca61cc47a033eb585~mv2.png',
+            description: 'Premium black hoodie with superior comfort, perfect for everyday casual wear. Features a spacious kangaroo pocket and adjustable drawstring hood.',
+            category: 'hoodies',
+            inStock: true,
+            colors: ['Black', 'Grey', 'Navy'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '80% cotton, 20% polyester',
+            featured: true
+        },
+        {
+            id: 'tee-1',
+            name: 'Classic White Tee',
+            price: 290.00,
+            image: 'https://static.wixstatic.com/media/18f5ba_8585b8bfb00c43919b59e1e19db36c49~mv2.png',
+            description: 'Timeless white t-shirt crafted from 100% premium cotton. Versatile staple that pairs effortlessly with any outfit in your wardrobe.',
+            category: 'tees',
+            inStock: true,
+            colors: ['White', 'Black', 'Grey'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '100% cotton',
+            featured: false
+        },
+        {
+            id: 'hoodie-2',
+            name: 'Minimalist White Hoodie',
+            price: 385.00,
+            image: 'https://static.wixstatic.com/media/18f5ba_2c9d39809574481fac699ff01deff9ef~mv2.png',
+            description: 'Clean and modern white hoodie with a minimalist design. Features a relaxed fit and ultra-soft interior for maximum comfort.',
+            category: 'hoodies',
+            inStock: true,
+            colors: ['White', 'Black', 'Grey'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '80% cotton, 20% polyester',
+            featured: true
+        },
+        {
+            id: 'pants-1',
+            name: 'Everyday Casual Pants',
+            price: 300.00,
+            image: 'https://static.wixstatic.com/media/18f5ba_9f1b9e6ed4ca4dbe82e781eff276ffa0~mv2.png',
+            description: 'Versatile casual pants with a slight stretch for ultimate comfort. Features a modern slim fit and durable construction for everyday wear.',
+            category: 'pants',
+            inStock: true,
+            colors: ['Black', 'Navy', 'Khaki'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '95% cotton, 5% elastane',
+            featured: false
+        },
+        {
+            id: 'hoodie-3',
+            name: 'Premium Grey Hoodie',
+            price: 410.00,
+            image: 'images/lance (3).jpg',
+            description: 'Luxurious grey hoodie featuring a tailored fit and premium fabric blend. Designed for both style and comfort with reinforced seams for durability.',
+            category: 'hoodies',
+            inStock: true,
+            colors: ['Grey', 'Black', 'Navy'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '80% cotton, 20% polyester',
+            featured: true
+        },
+        {
+            id: 'jacket-1',
+            name: 'Adventure Hiking Jacket',
+            price: 425.00,
+            image: 'images/lance (5).jpg',
+            description: 'Durable water-resistant hiking jacket designed for outdoor adventures. Features thermal insulation and multiple utility pockets for practicality.',
+            category: 'jackets',
+            inStock: true,
+            colors: ['Black', 'Grey', 'White'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '75% cotton, 25% polyester',
+            featured: false
+        },
+        {
+            id: 'tee-2',
+            name: 'Essential T-Shirt',
+            price: 275.00,
+            image: 'images/lance (6).jpg',
+            description: 'The perfect everyday t-shirt crafted from premium cotton for exceptional softness and breathability. Features a classic fit that never goes out of style.',
+            category: 'tees',
+            inStock: true,
+            colors: ['White', 'Black', 'Navy', 'Grey'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '100% premium cotton',
+            featured: true
+        },
+        {
+            id: 'hoodie-4',
+            name: 'Casual Pullover Hoodie',
+            price: 310.00,
+            image: 'images/lance (2).jpg',
+            description: 'Versatile pullover hoodie designed for maximum comfort and everyday style. Features ribbed cuffs and hem for a secure fit.',
+            category: 'hoodies',
+            inStock: true,
+            colors: ['White', 'Green', 'Blue', 'Black'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '90% cotton, 10% polyester',
+            featured: false
+        }
+    ],
+    bestSellers: [
+        {
+            id: 'tee-3',
+            name: 'Inspirational Quote Tee',
+            price: 380.00,
+            image: 'https://static.wixstatic.com/media/18f5ba_562af08ef84247abbf2784390692c6fc~mv2.png',
+            description: 'Stylish t-shirt featuring an inspirational quote with a modern typography design. Made from premium materials for all-day comfort.',
+            category: 'tees',
+            inStock: true,
+            colors: ['Black', 'Navy', 'Red'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '100% premium cotton',
+            featured: true,
+            reviews: 48,
+            rating: 4.7
+        },
+        {
+            id: 'hoodie-5',
+            name: 'Essential Hoodie',
+            regularPrice: 380.00,
+            salePrice: 310.00,
+            image: 'https://static.wixstatic.com/media/18f5ba_7f5e44dbba96425fae3b5e0b23fb37aa~mv2.png',
+            description: 'Best-selling hoodie now at a special price. Features a classic fit, double-layered hood, and front kangaroo pocket for everyday comfort and style.',
+            category: 'hoodies',
+            inStock: true,
+            onSale: true,
+            colors: ['Black', 'Grey', 'Navy', 'Burgundy'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '80% cotton, 20% polyester',
+            featured: true,
+            reviews: 65,
+            rating: 4.9
+        },
+        {
+            id: 'hoodie-6',
+            name: 'Premium Luxury Hoodie',
+            price: 450.00,
+            image: 'images/lance (4).jpg',
+            description: 'Top-tier luxury hoodie crafted from the finest materials. Features superior stitching, reinforced seams, and an ultra-plush interior for unmatched comfort.',
+            category: 'hoodies',
+            inStock: true,
+            colors: ['Black', 'Grey', 'Navy'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '90% cotton, 10% polyester',
+            featured: true,
+            reviews: 42,
+            rating: 4.8
+        },
+        {
+            id: 'tee-4',
+            name: 'Golf Performance Tee',
+            price: 345.00,
+            image: 'images/lance (7).jpg',
+            description: 'Professional-grade golf tee with advanced moisture-wicking technology. Designed for optimal performance with four-way stretch fabric and UV protection.',
+            category: 'tees',
+            inStock: true,
+            colors: ['White', 'Blue', 'Green', 'Red'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '95% polyester, 5% elastane',
+            featured: true,
+            reviews: 37,
+            rating: 4.6
+        },
+        {
+            id: 'hoodie-7',
+            name: 'Winter Thermal Hoodie',
+            price: 420.00,
+            image: 'images/lanceza (1).jpg',
+            description: 'Heavy-duty winter hoodie with thermal lining for exceptional warmth. Features a thick, insulated fabric blend ideal for cold weather conditions.',
+            category: 'hoodies',
+            inStock: true,
+            colors: ['Black', 'Grey', 'Navy'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '85% cotton, 15% polyester',
+            featured: false,
+            reviews: 29,
+            rating: 4.5
+        },
+        {
+            id: 'trackpants-1',
+            name: 'Premium Track Pants',
+            price: 360.00,
+            image: 'images/lanceza (2).jpg',
+            description: 'High-performance track pants with streamlined design for both athletic activities and casual wear. Features elastic waistband with drawstring and zippered pockets.',
+            category: 'pants',
+            inStock: true,
+            colors: ['Black', 'Grey', 'Navy'],
+            sizes: ['S', 'M', 'L', 'XL'],
+            material: '95% polyester, 5% elastane',
+            featured: true,
+            reviews: 53,
+            rating: 4.8
+        }
+    ],
+};
+
+        let cart = loadCart(); // Load cart from localStorage on script load
+        let wishlist = loadWishlist(); // Load wishlist from localStorage
+        let currentUser = null; // User management (basic, can be expanded)
+        const users = [ /* ... user data ... */
+            {
+                id: 1,
+                email: 'test@example.com',
+                password: 'password123', // In a real app, this would be hashed
+                name: 'Test User',
+                orders: [],
+                address: {
+                    street: '123 Main St',
+                    city: 'Capetown',
+                    postcode: '8000',
+                    country: 'South Africa'
+                }
+            }
+        ];
+
+        let selectedColor = ''; // Globally track selected color for product variations
+        let selectedSize = '';  // Globally track selected size for product variations
+
+        // --- Header Functionality ---
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+
+        // --- Cart Functionality ---
+        function updateCartCountDisplay() {
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCount.textContent = totalItems;
+        }
+
+        function loadCart() {
+            const storedCart = localStorage.getItem('cart');
+            return storedCart ? JSON.parse(storedCart) : [];
+        }
+
+        function saveCart() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        function addToCart(productId, productCategory) {
+            const product = getProductById(productId, productCategory);
+            if (!product) return;
+
+            const cartItem = cart.find(item => item.id === productId && item.color === selectedColor && item.size === selectedSize);
+
+            if (cartItem) {
+                cartItem.quantity++;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.salePrice || product.price,
+                    image: product.image,
+                    quantity: 1,
+                    color: selectedColor || (product.colors ? product.colors[0] : null), // Default to first color if available
+                    size: selectedSize || (product.sizes ? product.sizes[0] : null)   // Default to first size if available
+                });
+            }
+
+            saveCart();
+            updateCartCountDisplay();
+            showNotification(`${product.name} added to cart!`);
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            saveCart();
+            updateCartCountDisplay();
+            renderCartModal();
+        }
+
+        function updateCartItemQuantity(index, change) {
+            const item = cart[index];
+            const newQuantity = Math.max(1, item.quantity + change); // Ensure quantity is at least 1
+            item.quantity = newQuantity;
+            saveCart();
+            updateCartCountDisplay();
+            renderCartModal();
+        }
+
+        function clearCart() {
+            cart = [];
+            saveCart();
+            updateCartCountDisplay();
+            renderCartModal();
+        }
+
+        // --- Wishlist Functionality ---
+        function loadWishlist() {
+            const storedWishlist = localStorage.getItem('wishlist');
+            return storedWishlist ? JSON.parse(storedWishlist) : [];
+        }
+
+        function saveWishlist() {
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+        }
+
+        function addToWishlist(productId, productCategory) {
+            if (!currentUser) {
+                showNotification('Please sign in to add items to your wishlist', 'error');
+                return;
+            }
+
+            const product = getProductById(productId, productCategory);
+            if (!product) return;
+
+            if (!wishlist.some(item => item.id === productId)) {
+                wishlist.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.salePrice || product.price,
+                    image: product.image
+                });
+                saveWishlist();
+                showNotification(`${product.name} added to wishlist!`);
+            } else {
+                showNotification('Item already in wishlist', 'info');
+            }
+        }
+
+        function removeFromWishlist(index) {
+            wishlist.splice(index, 1);
+            saveWishlist();
+            renderWishlistModal();
+        }
+
+        function moveToCartFromWishlist(index) {
+            const item = wishlist[index];
+            addToCart(item.id, item.category); // Assuming category is stored in wishlist item if needed
+            removeFromWishlist(index);
+        }
+
+
+        // --- Product Rendering Functions ---
+        function createProductHTML(product, category) {
+            const priceHTML = product.onSale ?
+                `<span class="regular-price">R${product.regularPrice.toFixed(2)}</span><span class="sale-price">R${product.salePrice.toFixed(2)}</span>` :
+                `R${product.price.toFixed(2)}`;
+
+            const ratingHTML = product.rating ? generateRatingStarsHTML(product.rating, product.reviews) : '';
+            const colorOptionsHTML = product.colors ? generateColorOptionsHTML(product.colors) : '';
+            const sizeOptionsHTML = product.sizes ? generateSizeOptionsHTML(product.sizes) : '';
+
+            return `
+            <div class="product-item" data-product-id="${product.id}">
+                <div class="product-image">
+                    <img src="${product.image}" alt="${product.name}">
+                    ${product.featured ? '<span class="featured-badge">Featured</span>' : ''}
+                    ${product.onSale ? '<span class="sale-badge">Sale</span>' : ''}
+                    <div class="product-actions">
+                        <button class="quick-view-btn" data-product-id="${product.id}" data-category="${category}" aria-label="Quick View">
+                            <i class="far fa-eye"></i>
+                        </button>
+                        <button class="add-to-wishlist-btn" data-product-id="${product.id}" data-category="${category}" aria-label="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>${product.name}</h3>
+                    <p class="price">${priceHTML}</p>
+                    ${ratingHTML}
+                    ${colorOptionsHTML}
+                    ${sizeOptionsHTML}
+                    <button class="add-to-cart-btn" data-product-id="${product.id}" data-category="${category}">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+        `;
+        }
+
+        function generateRatingStarsHTML(rating, reviewCount) {
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 !== 0;
+            const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+
+            let starsHTML = '';
+            for (let i = 0; i < fullStars; i++) starsHTML += '<i class="fas fa-star"></i>';
+            if (hasHalfStar) starsHTML += '<i class="fas fa-star-half-alt"></i>';
+            for (let i = 0; i < emptyStars; i++) starsHTML += '<i class="far fa-star"></i>';
+
+            return `<div class="product-rating">${starsHTML} <span class="review-count">(${reviewCount || 0})</span></div>`;
+        }
+
+        function generateColorOptionsHTML(colors) {
+            return `
+            <div class="color-options">
+                <label>Color:</label>
+                <div class="color-selector">
+                    ${colors.map(color => `<div class="color-option" data-color="${color}" style="background-color: ${color.toLowerCase()};" tabindex="0" role="button" aria-label="Select color ${color}"></div>`).join('')}
+                </div>
+            </div>`;
+        }
+
+        function generateSizeOptionsHTML(sizes) {
+            return `
+            <div class="size-options">
+                <label>Size:</label>
+                <div class="size-selector">
+                    ${sizes.map(size => `<div class="size-option" data-size="${size}" tabindex="0" role="button" aria-label="Select size ${size}">${size}</div>`).join('')}
+                </div>
+            </div>`;
+        }
+
+
+        function renderProductGrid(productsArray, gridElementId, category) {
+            const gridElement = document.getElementById(gridElementId);
+            if (!gridElement) return;
+            gridElement.innerHTML = ''; // Clear existing content
+
+            productsArray.forEach(product => {
+                gridElement.innerHTML += createProductHTML(product, category);
+            });
+        }
+
+        function renderProductSections() {
+            renderProductGrid(products.newArrivals, 'new-arrivals-grid', 'newArrivals');
+            renderProductGrid(products.bestSellers, 'best-sellers-grid', 'bestSellers');
+        }
+
+
+        // --- Modal Rendering Functions ---
+        function renderCartModal() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+            const checkoutButton = document.getElementById('checkout-btn');
+            const cartModal = document.getElementById('cart-modal');
+
+            cartItemsContainer.innerHTML = '';
+            let total = 0;
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
+                cartTotalElement.textContent = 'R0.00';
+                checkoutButton.disabled = true;
+            } else {
+                checkoutButton.disabled = false;
+                cart.forEach((item, index) => {
+                    total += item.price * item.quantity;
+                    const cartItemHTML = `
+                    <div class="cart-item">
+                        <div class="cart-item-image"><img src="${item.image}" alt="${item.name}"></div>
+                        <div class="cart-item-details">
+                            <h4>${item.name}</h4>
+                            <p>R${item.price.toFixed(2)} x ${item.quantity} = R${(item.price * item.quantity).toFixed(2)}</p>
+                            ${item.color ? `<p>Color: ${item.color}</p>` : ''}
+                            ${item.size ? `<p>Size: ${item.size}</p>` : ''}
+                        </div>
+                        <div class="cart-item-actions">
+                            <button class="quantity-btn decrease-cart-item" data-index="${index}">-</button>
+                            <span class="item-quantity">${item.quantity}</span>
+                            <button class="quantity-btn increase-cart-item" data-index="${index}">+</button>
+                            <button class="remove-cart-item" data-index="${index}" aria-label="Remove item from cart"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>`;
+                    cartItemsContainer.innerHTML += cartItemHTML;
+                });
+                cartTotalElement.textContent = `R${total.toFixed(2)}`;
+            }
+            cartModal.style.display = 'block'; // Show modal
+        }
+
+
+        function renderWishlistModal() {
+            const wishlistItemsContainer = document.getElementById('wishlist-items');
+            const wishlistModal = document.getElementById('wishlist-modal');
+            const emptyWishlistMessage = wishlistModal.querySelector('.empty-wishlist');
+
+            wishlistItemsContainer.innerHTML = '';
+
+            if (wishlist.length === 0) {
+                emptyWishlistMessage.style.display = 'block';
+            } else {
+                emptyWishlistMessage.style.display = 'none';
+                wishlist.forEach((item, index) => {
+                    const wishlistItemHTML = `
+                    <div class="wishlist-item">
+                        <div class="wishlist-item-image"><img src="${item.image}" alt="${item.name}"></div>
+                        <div class="wishlist-item-details">
+                            <h4>${item.name}</h4>
+                            <p>R${item.price.toFixed(2)}</p>
+                        </div>
+                        <div class="wishlist-item-actions">
+                            <button class="move-to-cart-btn" data-index="${index}" aria-label="Move to cart"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="remove-wishlist-item" data-index="${index}" aria-label="Remove from wishlist"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>`;
+                    wishlistItemsContainer.innerHTML += wishlistItemHTML;
+                });
+            }
+            wishlistModal.style.display = 'block'; // Show modal
+        }
+
+        function renderProductQuickViewModal(product, category) {
+            const modalContainer = document.getElementById('product-quick-view-modal');
+            if (!modalContainer) return;
+
+            const priceHTML = product.onSale ?
+                `<span class="regular-price">R${product.regularPrice.toFixed(2)}</span><span class="sale-price">R${product.salePrice.toFixed(2)}</span>` :
+                `R${product.price.toFixed(2)}`;
+            const ratingHTML = product.rating ? generateRatingStarsHTML(product.rating, product.reviews) : '';
+            const colorOptionsHTML = product.colors ? generateColorOptionsHTML(product.colors) : '';
+            const sizeOptionsHTML = product.sizes ? generateSizeOptionsHTML(product.sizes) : '';
+
+            modalContainer.innerHTML = `
+            <div class="product-modal-overlay" id="quick-view-overlay">
+                <div class="product-modal">
+                    <button class="close-modal close-quick-view">×</button>
+                    <div class="product-modal-content">
+                        <div class="product-modal-image">
+                            <img src="${product.image}" alt="${product.name}">
+                        </div>
+                        <div class="product-modal-details">
+                            <h2>${product.name}</h2>
+                            <p class="price">${priceHTML}</p>
+                            ${ratingHTML}
+                            <p class="product-description">${product.description}</p>
+                            ${product.material ? `<p class="product-material"><strong>Material:</strong> ${product.material}</p>` : ''}
+                            ${colorOptionsHTML}
+                            ${sizeOptionsHTML}
+                            <div class="product-quantity">
+                                <label>Quantity:</label>
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn decrease-qty">-</button>
+                                    <input type="number" value="1" min="1" class="quantity-input-qv">
+                                    <button class="quantity-btn increase-qty">+</button>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-modal-btn" data-product-id="${product.id}" data-category="${category}">
+                                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                                </button>
+                                <button class="add-to-wishlist-modal-btn" data-product-id="${product.id}" data-category="${category}">
+                                    <i class="far fa-heart"></i> Add to Wishlist
+                                </button>
+                            </div>
+                            <div class="product-meta">
+                                <p><strong>SKU:</strong> ${product.id}</p>
+                                <p><strong>Category:</strong> ${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</p>
+                                <p><strong>Availability:</strong> ${product.inStock ? '<span class="in-stock">In Stock</span>' : '<span class="out-of-stock">Out of Stock</span>'}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+            modalContainer.querySelector('#quick-view-overlay').style.display = 'block'; // Show modal
+        }
+
+
+        // --- Event Listeners ---
+        document.addEventListener('click', function (event) {
+            const target = event.target;
+
+            // --- Header Actions ---
+            if (target.closest('#cart-button')) {
+                renderCartModal();
+            } else if (target.closest('#wishlist-button')) {
+                renderWishlistModal();
+            }
+
+            // --- Close Modals ---
+            if (target.closest('.close-modal')) {
+                const modalOverlay = target.closest('.product-modal-overlay');
+                if (modalOverlay) modalOverlay.style.display = 'none';
+            }
+
+            // --- Product Grid Actions ---
+            if (target.closest('.add-to-cart-btn')) {
+                const productItem = target.closest('.product-item');
+                const productId = productItem.dataset.productId;
+                const category = target.dataset.category;
+                addToCart(productId, category);
+            } else if (target.closest('.add-to-wishlist-btn')) {
+                const productItem = target.closest('.product-item');
+                const productId = productItem.dataset.productId;
+                const category = target.dataset.category;
+                addToWishlist(productId, category);
+            } else if (target.closest('.quick-view-btn')) {
+                const productId = target.dataset.productId;
+                const category = target.dataset.category;
+                const product = getProductById(productId, category);
+                if (product) {
+                    renderProductQuickViewModal(product, category);
+                }
+            }
+
+            // --- Cart Modal Actions ---
+            if (target.classList.contains('remove-cart-item')) {
+                removeFromCart(parseInt(target.dataset.index));
+            } else if (target.classList.contains('increase-cart-item')) {
+                updateCartItemQuantity(parseInt(target.dataset.index), 1);
+            } else if (target.classList.contains('decrease-cart-item')) {
+                updateCartItemQuantity(parseInt(target.dataset.index), -1);
+            }
+
+            // --- Wishlist Modal Actions ---
+            if (target.classList.contains('remove-wishlist-item')) {
+                removeFromWishlist(parseInt(target.dataset.index));
+            } else if (target.classList.contains('move-to-cart-btn')) {
+                moveToCartFromWishlist(parseInt(target.dataset.index));
+            }
+
+            // --- Product Quick View Modal Actions ---
+            if (target.classList.contains('add-to-cart-modal-btn')) {
+                const productId = target.dataset.productId;
+                const category = target.dataset.category;
+                const quantity = parseInt(document.querySelector('#product-quick-view-modal .quantity-input-qv').value); // Get quantity from modal
+                for (let i = 0; i < quantity; i++) { // Add quantity of items to cart
+                    addToCart(productId, category);
+                }
+                document.querySelector('#quick-view-overlay').style.display = 'none'; // Close modal after adding to cart
+            } else if (target.classList.contains('add-to-wishlist-modal-btn')) {
+                const productId = target.dataset.productId;
+                const category = target.dataset.category;
+                addToWishlist(productId, category);
+            } else if (target.classList.contains('close-quick-view')) {
+                document.querySelector('#quick-view-overlay').style.display = 'none'; // Close quick view modal
+            }
+
+            // --- Color and Size Selection (Product Grid & Quick View) ---
+            if (target.classList.contains('color-option')) {
+                const optionsContainer = target.closest('.color-selector');
+                optionsContainer.querySelectorAll('.color-option').forEach(opt => opt.classList.remove('active')); // Remove active from siblings
+                target.classList.add('active'); // Add active to clicked option
+                selectedColor = target.dataset.color; // Update global selected color
+            } else if (target.classList.contains('size-option')) {
+                const optionsContainer = target.closest('.size-selector');
+                optionsContainer.querySelectorAll('.size-option').forEach(opt => opt.classList.remove('active'));
+                target.classList.add('active');
+                selectedSize = target.dataset.size; // Update global selected size
+            }
+
+            // --- Quantity Adjustments (Quick View Modal) ---
+            if (target.classList.contains('increase-qty')) {
+                const inputField = document.querySelector('#product-quick-view-modal .quantity-input-qv');
+                inputField.value = parseInt(inputField.value) + 1;
+            } else if (target.classList.contains('decrease-qty')) {
+                const inputField = document.querySelector('#product-quick-view-modal .quantity-input-qv');
+                inputField.value = Math.max(1, parseInt(inputField.value) - 1); // Ensure quantity doesn't go below 1
+            }
+        });
+
+
+        // --- Initialization ---
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProductSections();
+            updateCartCountDisplay(); // Initial cart count update
+        });
+    </script>
 </body>
+
 </html>
